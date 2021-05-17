@@ -1,0 +1,38 @@
+how to access database 
+webhost > cPanel > phpMyAdmin
+
+By default, the database has eleven tables.
+Database tables have a default prefix wp_ which can be changed at will.
+
+Table 1: wp_commentmeta
+wp_commentmeta stores metadata for comments left on your WordPress site.  Information on things like whether a comment is approved, or pending or trashed are stored in this table.
+
+Table 2: wp_comments
+wp_comments stores information surrounding comments left on your account. It includes unique number assigned to each comment, email addresses, IP Addresses and URL for the comment author, pingback or trackback, replies to comments, time and date of the comment, among other things.
+
+Table 3: wp_links
+wp_links takes care of blogrolls (a list of hyperlinks to other blogs or websites) that was fashionable in the past. Now not supported 
+
+Table 4: wp_options
+In your WordPress dashboard, there is an option called Setting. wp_options stores data related to that Settings feature. If you select Setting from your WordPress dashboard, you’ll see options that enable you to change site title, tagline, site address (URL), etc. This information is stored in the wp_options table. 
+
+Table 5: wp_postmeta
+wp_postmeta stores metadata (like Post ID, meta ID, among other things) for posts and pages. Identification numbers allotted to each post helps to store them in a structured manner. 
+
+Table 6: wp_posts
+wp_posts stores information from posts, pages, and the navigation menu. How is it different from wp_postmeta? In wp_postmeta, you’ll find unique identification number allotted to posts and pages whereas in wp_posts consists of information like post name, author name, post date among other things. 
+
+Table 7: wp_terms
+wp_terms stores three things: categories for tags of posts, categories of posts and link categories. 
+
+Table 8: wp_term_relationships
+wp_term_relationships stores relationship data for categories and tags from the wp_terms table. What does that mean? Let’s say there is a post on your website named XYZ. It belongs to the category ABC. This table helps determine that post A belongs to ABC categories and not some other category.
+
+Table 9: wp_term_taxonomy
+wp_term_taxonomy stores descriptions of the taxonomy (tag, link, or category) for the entries in the wp_terms table. 
+
+Table 10: wp_usermeta
+wp_usermeta stores metadata of a WordPress user. For instance, your user ID is 1, and your fellow admin’s user ID is 2. This particular information is stored in the wp_usermeta table.
+
+Table 11: wp_users
+wp_users stores data for WordPress users. How is it different to wp_usermeta? Well, the wp_usermeta table stored unique identification number of users but the wp_users table stores other user information like the Username, User Login Name, Email address, etc.
