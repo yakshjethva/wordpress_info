@@ -1,0 +1,80 @@
+There are several ways to convert html to php 
+but here I am writing about manual way 
+
+Step 1: Create a New Theme Folder
+Now, go to the code editor and create text files. There are five different files you’ll want to create:
+
+Style.css
+Index.php
+Header.php
+Sidebar.php
+Footer.php
+
+Step 2: Copy CSS Code
+Next, you’ll have to copy the CSS coding from your old website onto a WordPress Style Sheet.
+
+To do that, you’ll have to prepare the WordPress style sheet, which is the style.css file you created in the last step.
+
+Copy and paste the CSS code from the old site’s source into that style sheet.
+
+Then it’s time to fill out the various parts of the style sheet header for your new WordPress theme.
+
+They are:
+
+Theme Name – This can be anything you want.
+Theme URL – The homepage information or site address.
+Author – Your name.
+Author URL – Link to the homepage you’re building.
+Description – This part is an optional write-up on the theme that shows within the WordPress backend.
+Version – Start with 1.0.
+License, License URL, Tags – This part is only necessary if you’re going to submit the theme into the WordPress directory for others to use. If you’re keeping it for yourself, then don’t worry about it.
+https://prnt.sc/131ce98
+
+Step 3: Separate Existing HTML
+WordPress uses PHP to access database information. As a result, your existing HTML code has to be chopped into separate pieces so that the WordPress CMS can properly string them together.
+
+To do this, you’ll have to copy parts of the original HTML document into several different PHP files.
+
+First, open your index.html file.
+
+Go through the WordPress files that were created and copy that code into the following areas:
+
+Header.php – This entails everything from the beginning of your HTML code up to the main content area. Right before the section marked </head> you’ll have to copy and paste <?php wp_head();?>
+Sidebar.php – This is where you put all the code from the section marked <aside>
+Footer.php – This section starts at the end of the sidebar and goes up to the end of the file. Add a call for <?php wp_footer();?> before closing off the bracket with </body>.
+
+Step 4: Change the Header.php and Index.php Files for WordPress
+Next, you’ll be changing the header.php and index.php to fit into WordPress’s format.
+
+To do this, look for a link in the <head> section that looks like this:
+<link rel=”stylesheet” href=”style.css”>.
+
+Replace that link with this:
+<link rel=”stylesheet” href=”<?php echo get_template_directory_uri(); ?>/style.css” type=”text/css” media=”all” />
+  get_template_directory_uri()
+  This function will return the URL of the current theme, it will not return a trailing slash. If you are using a child theme then this function will return the parent theme directory URL.Use this function to include a new Stylesheet or Javascript file in your theme.
+
+Now, save and close the header.php file. You’re done with it for the moment.
+pen your index.php file. It should be empty.
+Enter the following, precisely like this:
+
+<?php get_header(); ?>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
+
+Step 5: Screenshot and Upload
+The last thing you’ll need to do is create a screenshot of your theme and upload it.
+The screenshot will show a preview of your site in the WordPress backend.
+Take this screenshot and crop it to 880×660 pixels. Save the file as a screenshot.png.
+Now, add the screenshot to your theme folder.
+
+Create a zip file.
+Go to WordPress.
+Select Appearance, Themes, and click Add New at the top.
+Click Upload Theme.
+Upload your zip file and click Install Now.
+Once that’s done, you can activate the theme!
+
+
+
+
