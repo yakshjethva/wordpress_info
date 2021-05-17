@@ -1,0 +1,6 @@
+If you are looking for a summary on How to install WordPress manually, here it is:
+Download the latest version of WordPress from wordpress.org
+Unzip the file and upload it to the public_html (or similar) directory
+Create MySQL Database and User(grant permissions to user).
+Configure the wp-config.php file.
+Run the WordPress install.
