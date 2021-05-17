@@ -12,11 +12,8 @@ Footer.php
 
 Step 2: Copy CSS Code
 Next, you’ll have to copy the CSS coding from your old website onto a WordPress Style Sheet.
-
 To do that, you’ll have to prepare the WordPress style sheet, which is the style.css file you created in the last step.
-
 Copy and paste the CSS code from the old site’s source into that style sheet.
-
 Then it’s time to fill out the various parts of the style sheet header for your new WordPress theme.
 
 They are:
@@ -34,9 +31,7 @@ Step 3: Separate Existing HTML
 WordPress uses PHP to access database information. As a result, your existing HTML code has to be chopped into separate pieces so that the WordPress CMS can properly string them together.
 
 To do this, you’ll have to copy parts of the original HTML document into several different PHP files.
-
 First, open your index.html file.
-
 Go through the WordPress files that were created and copy that code into the following areas:
 
 Header.php – This entails everything from the beginning of your HTML code up to the main content area. Right before the section marked </head> you’ll have to copy and paste <?php wp_head();?>
