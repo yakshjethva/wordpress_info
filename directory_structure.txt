@@ -13,6 +13,14 @@ Here is a list of core WordPress files and folders you would see in your WordPre
 Basically wordpress has 2 config files 
 htaccess – A server configuration file, WordPress uses it to manage permalinks(permennat link) and redirects.
 wp-config.php – This file tells WordPress how to connect to your database. It also sets some global settings for your WordPress site.
+If wp-config is unable to connect your WordPress site with the database, your site will appear blank.
+
+1. wp-admin
+The wp-admin folder contains administrative files that power the WordPress dashboard. The first thing that you see after logging into your WordPress site is the WordPress dashboard.
+When you are trying to log in to the dashboard, WordPress checks whether the credentials that you have provided are correct, or whether you are an admin or a simple contributor with limited access to the site. The files in the wp-admin folder enable WordPress to carry out these functions. The files also enable a bunch of other functions like loading of the dashboard, making a connection to the database, etc.
+
+2. wp-includes
+Files in the wp-includes are responsible for how WordPress looks. This folder is large in size, and most of the WordPress core files are stored here. The text that we see on WordPress, the font of the text – all these are enabled by the files in the wp-includes folder. The files also contain rules, hierarchies, and action command for some of the WordPress features.
 
 - depending upon setup you may or may not be able to view these files 
 robots.txt – Contains instructions for search engines crawlers
