@@ -1,0 +1,38 @@
+<!-- get_header() is used to attach header in files -->
+<!-- get_footer() is used to attach footer in files -->
+<!-- bloginfo() is default function to display site title (setting>general>sitetitle)  -->
+<!-- bloginfo('description') is default function to display site tagline (setting>general>sitetitle)  -->
+<!-- have_posts() function will fetch all the posts and return the count of total posts  -->
+<!-- the_post() function will fetch the current post data  -->
+<!-- the_title() function will return the title of the post  -->
+<!-- the_content() function will return the content of the post  -->
+<!-- the_permalink() function will add permenant link of website  (output "http://localhost/learn/index.php/2021/05/18/hello-world/")-->
+
+<!-- As per the documentation, the available functions to access the post within the loop are:
+
+next_post_link() – a link to the post published chronologically after the current post
+previous_post_link() – a link to the post published chronologically before the current post
+the_category() – the category or categories associated with the post or page being viewed
+the_author() – the author of the post or page
+the_content() – the main content for a post or page
+the_excerpt() – the first 55 words of a post’s main content followed by an ellipsis (…) or read more link that goes to the full post. You may also use the “Excerpt” field of a post to customize the length of a particular excerpt.
+the_ID() – the ID for the post or page
+the_meta() – the custom fields associated with the post or page
+the_shortlink() – a link to the page or post using the url of the site and the ID of the post or page
+the_tags() – the tag or tags associated with the post
+the_title() – the title of the post or page
+the_time() – the time or date for the post or page. This can be customized using standard php date function formatting.
+including the following conditional tags:
+
+is_home() – Returns true if the current page is the homepage
+is_admin() – Returns true if inside Administration Screen, false otherwise
+is_single() – Returns true if the page is currently displaying a single post
+is_page() – Returns true if the page is currently displaying a single page
+is_page_template() – Can be used to determine if a page is using a specific template, for example: is_page_template('about-page.php')
+is_category() – Returns true if page or post has the specified category, for example: is_category('news')
+is_tag() – Returns true if a page or post has the specified tag
+is_author() – Returns true if inside author’s archive page
+is_search() – Returns true if the current page is a search results page
+is_404() – Returns true if the current page does not exist
+has_excerpt() – Returns true if the post or page has an excerpt -->
+
