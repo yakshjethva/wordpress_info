@@ -6,6 +6,7 @@ WP function  | wp_options. | WP constant  | what it represents       | WP Settin
 `home_url()` | `home`      | `WP_HOME`    | browser address bar      | Site Address      | https://www.example.com
 WP_options contains value of home_url and site_url
 also can be changed from admin panel 
+also can be changed from WP_config
 
 
 
