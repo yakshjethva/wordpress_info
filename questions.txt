@@ -1,0 +1,11 @@
+Difference between SITE_URL vs HOME_URL ?
+
+WP function  | wp_options. | WP constant  | what it represents       | WP Settings Label | Example     
+-------------------------------------------------------------------------------------------------------------------------------------
+`site_url()` | `siteurl`   | `WP_SITEURL` | WordPress files location | WordPress Address | https://www.example.com/wordpress
+`home_url()` | `home`      | `WP_HOME`    | browser address bar      | Site Address      | https://www.example.com
+WP_options contains value of home_url and site_url
+also can be changed from admin panel 
+
+
+
